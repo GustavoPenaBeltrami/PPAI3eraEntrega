@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: sans-serif;
+}
+
+html {
+    background: rgb(5, 0, 92);
+    background: linear-gradient(145deg, rgba(5, 0, 92, 1) 0%, rgba(34, 34, 143, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0px 0px;
+    margin-bottom: 20px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main button {
+    width: 300px;
+    height: 100px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.main button:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+    transition: 0.5s all;
+}
+
+form {
+    width: 900px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.datosLlamada>div {
+    display: flex;
+    margin: 10px 0px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+label {
+    width: 200px;
+}
+
+.descripcion {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.descripcion textarea {
+    background-color: rgb(230, 230, 230);
+    width: 99%;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.descripcion h3 {
+    position: relative;
+    top: -20px;
+    left: -15px;
+    font-weight: 100;
+    font-size: 15px;
+    color: gray;
+}
+
+.validaciones {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.validaciones h3 {
+    position: relative;
+    top: -20px;
+    left: -15px;
+    font-weight: 100;
+    font-size: 15px;
+    color: gray;
+}
+
+.validaciones>div>div {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.validaciones>div>div:last-child {
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.validaciones>div>div>div {
+    
+    display: grid;
+    grid-template-columns: 90px 200px 200px 200px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+.validaciones>div button {
+    background-color: rgb(210, 210, 210);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -7px
+}
+
+.validaciones>div>div {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.validaciones>div>div select {
+    background-color: rgb(210, 210, 210);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    width: 150px;
+}
+
+.validaciones>div>div label {
+    width: 80px !important;
+}
+
+.validaciones>div>div p {
+    margin-right: 10px;
+    color: gray;
+    font-style: italic;
+}
+
+.acciones {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.acciones h3 {
+    position: relative;
+    top: -20px;
+    left: -15px;
+    font-weight: 100;
+    font-size: 15px;
+    color: gray;
+}
+
+.acciones>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acciones>div .enviarAccion {
+    background-color: rgb(210, 210, 210);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.acciones>div>div {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.acciones>div>div select {
+    background-color: rgb(210, 210, 210);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.acciones>div>div label {
+    width: 180px !important;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancelar {
+    background-color: rgb(182, 29, 29);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+
+.finalizar {
+    background-color: rgb(31, 137, 218);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+
+.validado {
+    color: green;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.rechazado {
+    color: rgb(182, 29, 29);
+    margin-left: 20px;
+    font-style: italic;
+}
